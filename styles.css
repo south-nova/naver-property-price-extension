@@ -1,0 +1,42 @@
+.price-container {
+  padding: 0 18px 12px;
+  background-color: #fff;
+}
+
+/* 헤더 */
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0 14px;
+}
+
+.container-title {
+  display: inline-flex;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* 셀렉터 영역 */
+.select-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.select-wrapper > select {
+  font-size: 13px;
+  line-height: 21px;
+  letter-spacing: -0.43px;
+  white-space: nowrap;
+  color: #444;
+  background-color: #fff;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.point-text {
+  color: #f00;
+}
