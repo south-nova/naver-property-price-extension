@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "네이버 부동산 공시가격 조회",
+  "version": "1.0.0",
+  "description": "네이버 부동산 매물 정보에서 다세대, 단독/다가구 주택의 공시가격을 쉽게 조회할 수 있습니다.",
+
+  "icons": {
+    "16": "images/logo-16.png",
+    "48": "images/logo-48.png",
+    "128": "images/logo-128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.land.naver.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+
+  "permissions": ["activeTab", "webRequest"],
+
+  "host_permissions": [
+    "https://business.juso.go.kr/*",
+    "https://api.vworld.kr/*"
+  ]
+}
