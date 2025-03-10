@@ -37,7 +37,7 @@
     }
   ],
 
-  "permissions": ["activeTab", "webRequest"],
+  "permissions": ["activeTab"],
 
   "host_permissions": [
     "https://business.juso.go.kr/*",
