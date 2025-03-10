@@ -1,5 +1,5 @@
 const link = document.createElement("link");
-link.href = whale.runtime.getURL("../styles.css");
+link.href = chrome.runtime.getURL("styles.css");
 link.type = "text/css";
 link.rel = "stylesheet";
 
@@ -63,7 +63,7 @@ function waitForElement(selector, options = {}) {
 async function renderPriceSection() {
   const container = await waitForElement("detailContents1");
 
-  fetch(whale.runtime.getURL("../section.html"))
+  fetch(chrome.runtime.getURL("section.html"))
     .then((response) => response.text())
     .then((html) => {
       container.insertAdjacentHTML("afterbegin", html);
